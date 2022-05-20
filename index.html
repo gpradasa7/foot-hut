@@ -114,64 +114,71 @@
   </div>
 
   <div class="menu">
-    <h2><span class="first">Menu</span>That <span class="second">Always</span> Make You Fall In <span
+    <h2><span class="first">Menu </span>That <span class="second">Always</span> Make You Fall In <span
         class="first">Love</span></h2>
   </div>
 
-  <section>
-    <button class="buttoms">Ramen
-    </button><button class="buttoms">Breakfast</button><button class="buttoms">Lunch</button><button
-      class="buttoms">Dinner</button>
-    <button class="buttoms">Mexican</button>
-    <button class="buttoms">Italian</button>
-    <button class="buttoms">Desserts</button>
-    <button class="buttoms">Drinks</button>
+  <section class="menu-1">
+    <button class="buttoms" id="ramen">Ramen
+    </button><button class="buttoms" id="breakfast">Breakfast</button><button class="buttoms"
+      id="lunch">Lunch</button><button class="buttoms" id="dinner">Dinner</button>
+    <button class="buttoms" id="mexican">Mexican</button>
+    <button class="buttoms" id="italian">Italian</button>
+    <button class="buttoms" id="desserts">Desserts</button>
+    <button class="buttoms" drinks>Drinks</button>
   </section>
 
-  <div>
-    <section class="main">
-      <div class="container">
-        <img src="./images/Kebab.png" alt="image-product" class="images-main">
-        <img src="./images/users.png" alt="image-clients" class="images-clients">
-        <img src="./images/star.png" alt="image-clients" class="images-clients">
-        <span>(4.5)</span>
-        <h4 class="title-main"></h4>
-        <p class="p-main">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+
+  <section class="secundary">
+    <div id="containerCards"></div>
+    <template id="template">
+      <div class="contener">
+        <img src="./images/Kebab.png" alt="Kebab" class="image-secundary">
+        <div class="image--contener-clients"><img class="img1" src="./images/users.png" alt="client">
+          <div><img class="img2" src="./images/star.png" alt="star"></div>
+          <div><span>(4.5)</span></div>
+        </div>
+        <h4 class="title-main">Kebab</h4>
+        <p class="p-secundary">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
         <button class="buttom">Order Now</button>
       </div>
-    </section>
-  </div>
+    </template>
+  </section>
 
 
-  <div class="aside">
+
+  <div class="aside-final">
+    <div class="rectangle"></div>
     <h2>It’s Now <span class="first">More Easy</span> to <span class="second">Order </span>by Our Mobile
       <span class="first">App</span>
     </h2>
     <p>All you need to do is download one of the best delivery apps, make a and most companies are opting for mobile app
       devlopment for food delivery</p>
 
-    <div class="aside">
-      <img src="" alt="googleplay">
-    </div>
-    <div class="aside">
-      <img src="" alt="appstore">
-    </div>
-    <div class="aside">
-      <img src="./images/chef2.png" alt="chef2">
-    </div>
+    <a href="#" class="aside-final-buttons">
+      <img src="./images/Mobile playstore badge.svg" alt="googleplay">
+      <a href="#"></a>
+
+
+      <a href="#" class="aside-final-buttons">
+        <img src="./images/Mobileappstorebadge2.svg" alt="appstore">
+        <a href="#"></a>
+        <div class="aside-final-chef">
+          <img src="./images/chef2.png" alt="chef2">
+        </div>
   </div>
 
-  <footer class="footer-main">
-    <div>
+
+  <footer class="footer-final">
+    <div class="first-foot-item">
       <h3>Foodhut</h3>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae molestias nam dolorum.</p>
       <img src="./images/Facebook.png" alt="Facebook">
       <img src="./images/instagram.png" alt="instagram">
       <img src="./images/Twitter.png" alt="Twitter">
-
     </div>
 
-    <div>
+    <div class="second-foot-item">
       <h3>About Us</h3>
       <ul>
         <li>About Us</li>
@@ -180,7 +187,8 @@
         <li>Company</li>
       </ul>
     </div>
-    <div>
+
+    <div class="third-foot-item">
       <h3>Company</h3>
       <ul>
         <li>Partnership</li>
@@ -189,24 +197,27 @@
         <li>Sitemap</li>
       </ul>
     </div>
-    <div>
+    <div class="four-foot-item">
       <h3>Get in touch</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+      <fom>
+        <input type="email" name="email" id="email" placeholder="Email">
+        <button type="submit">Suscribe</button>
+      </fom>
     </div>
-    <fom>
-      <input type="email" name="email" id="email" placeholder="Email">
-      <button type="submit">Suscribe</button>
-    </fom>
+
+
+    <footer class="footer-main2">
+      <h5>Copyright © 2022 Foodhut.</h5>
+    </footer>
   </footer>
 
-  <footer class="footer-main2">
-    <h5>Copyright © 2022 Foodhut.</h5>
-  </footer>
-  <div class="attribution">
-    Coded by <a href="#">GPRADASA</a>.
-  </div>
+
+
+
 
   <script src="./scripts/script.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 
 </html>
