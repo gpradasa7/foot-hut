@@ -8,7 +8,7 @@ body {
   margin: 0;
   font-family: "Sofia Pro", sans-serif;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 .first {
   color: #f54748;
@@ -22,7 +22,11 @@ body {
   height: 788px;
   left: -170px;
   top: 10px;
-  background: linear-gradient(180deg, rgba(245, 71, 72, 0.06) 0%, rgba(245, 71, 72, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(245, 71, 72, 0.06) 0%,
+    rgba(245, 71, 72, 0) 100%
+  );
 }
 .logo {
   position: absolute;
@@ -420,9 +424,10 @@ body {
 }
 .secundary {
   position: relative;
-  width: 1104px;
-  height: 516px;
-  left: 70px;
+  display: block;
+  width: 100%;
+  height: auto;
+  left: 20px;
   top: 900px;
 }
 .secundary .contener {
@@ -430,6 +435,8 @@ body {
   width: 310px;
   height: 368px;
   margin-right: 10px;
+  margin-top: 5%;
+  margin-bottom: 7%;
 }
 .secundary .contener .image-secundary {
   position: relative;
@@ -467,7 +474,7 @@ body {
 }
 .secundary .contener .title-main {
   position: relative;
-  width: 120px;
+  max-width: max-content;
   height: 43px;
   left: 100px;
   bottom: 130px;
@@ -662,4 +669,5 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
 }

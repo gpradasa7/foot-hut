@@ -1,5 +1,4 @@
 //Mobile: 428px
-// Desktop: 1440px
 @Black: #191919;
 @Salmon: #f54748;
 @Yellow: #fdc55e;
@@ -9,23 +8,45 @@
   rgba(245, 71, 72, 0.06) 0%,
   rgba(245, 71, 72, 0) 100%
 );
+
+@light-grey: rgb(230, 230, 230);
+@dark-grey: @Black;
+@accent: @Salmon;
+@white: rgb(255, 255, 255);
+
+@media (prefers-color-scheme: dark) {
+  @text-color: @light-grey;
+  @accent-color: @Salmon;
+  @page-background-color: @dark-grey;
+  @card-background-color: @dark-grey;
+}
+
+@media (prefers-color-scheme: light) {
+  @text-color: @dark-grey;
+  @accent-color: @Salmon;
+  @page-background-color: @white;
+}
+
+// Desktop: 1440px
+
 @title: 48px;
 @weight-title: 900, Black;
 @p: 20px;
 @weight-p: 400, Regular;
 @font-family: "Sofia Pro", sans-serif;
 .btnform {
-  background-color: @Salmon;
+  background-color: @accent;
   border-radius: 100px;
   border: none;
   cursor: pointer;
 }
 
 body {
+  color: @dark-grey;
   margin: 0;
   font-family: @font-family;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 .first {
   color: @Salmon;
@@ -215,7 +236,7 @@ body {
 .main {
   h3 {
     position: relative;
-    color: @Black;
+    color: @accent;
     font-size: @title;
     font-weight: @weight-title;
     font-family: @font-family;
@@ -300,6 +321,7 @@ body {
       font-weight: 600;
       font-size: 24px;
       line-height: 33px;
+      color: @accent;
     }
     .p-main {
       opacity: 0.8;
@@ -421,6 +443,7 @@ body {
     font-size: @title;
     line-height: 67px;
     text-align: center;
+    color: @accent;
   }
 }
 
@@ -449,15 +472,18 @@ body {
 
 .secundary {
   position: relative;
-  width: 1104px;
-  height: 516px;
-  left: 70px;
+  display: block;
+  width: 100%;
+  height: auto;
+  left: 20px;
   top: 900px;
   .contener {
     background-image: url(../images/background-product.png);
     width: 310px;
     height: 368px;
     margin-right: 10px;
+    margin-top: 5%;
+    margin-bottom: 7%;
     .image-secundary {
       position: relative;
       width: 253.93px;
@@ -496,7 +522,7 @@ body {
 
     .title-main {
       position: relative;
-      width: 120px;
+      max-width: max-content;
       height: 43px;
       left: 100px;
       bottom: 130px;
@@ -504,6 +530,7 @@ body {
       font-style: normal;
       font-weight: 600;
       font-size: 18px;
+      color: @accent-color;
     }
     .p-secundary {
       opacity: 0.8;
@@ -544,6 +571,7 @@ body {
     font-weight: 700;
     font-size: @title;
     line-height: 67px;
+    color: @accent-color;
   }
   p {
     width: 550px;
@@ -700,4 +728,5 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
 }

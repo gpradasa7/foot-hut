@@ -2,31 +2,101 @@
   "ramen": [
     { "name": "kebab", "image": "../data/images/ramen-cody.jpg" },
     { "name": "Desi Chowmein", "image": "../data/images/ramen-mae.jpg" },
-    { "name": "Chicken Chargha", "image": "../data/images/ramen-grow.jpg" },
-    { "name": "Chicken Tikka", "image": "../data/images/ramen-black.jpg" }
+    { "name": "Chicken Chargha", "image": "../data/images/ramen-grow.png" },
+    { "name": "Chicken Tikka", "image": "../data/images/ramen-black.jpg" },
     { "name": "Hakata Ramen", "image": "../data/images/ramen-kebab.png" }
   ],
   "breakfast": [
     {
-      "name": "Eggs Tikka","image": "../data/images/breakfast-eggs.jpg"}, {
-      "name": "Break Tikka","image": "../data/images/breakfast-hotcake.jpg"}, {
-      "name": "Bread Tikka","image": "../data/images/breakfast-bread.jpg"}, {
-      "name": "Chicken Toffu","image": "../data/images/breakfast-simple.jpg"
+      "name": "Eggs Tikka",
+      "image": "../data/images/breakfast-eggs.jpg"
+    },
+    {
+      "name": "Break Tikka",
+      "image": "../data/images/breakfast-hotcake.jpg"
+    },
+    {
+      "name": "Bread Tikka",
+      "image": "../data/images/breakfast-bread.jpg"
+    },
+    {
+      "name": "Chicken Toffu",
+      "image": "../data/images/breakfast-simple.jpg"
     }
   ],
   "lunch": [
     {
       "name": "Desi Chowmein",
-      "image": "../data/images/lunch-fast.jpg"   }, {
-        "name": "Bread Tikka","image": "../data/images/breakfast-bread.jpg"   },{"name": "Chicken Toffu","image": "../data/images/lunch-izi.jpg"},
-        {"name": "Eggs Tikka","image": "../data/images/lunch-cervera.jg"   }, {"name":"Desi Chowmein","image": "../data/images/lunch-salad.jpg"   }
+      "image": "../data/images/lunch-fast.jpg"
+    },
+    {
+      "name": "Bread Tikka",
+      "image": "../data/images/breakfast-bread.jpg"
+    },
+    { "name": "Chicken Toffu", "image": "../data/images/lunch-izi.jpg" },
+    { "name": "Eggs Tikka", "image": "../data/images/lunch-cervera.jpg" },
+    { "name": "Desi Chowmein", "image": "../data/images/lunch-salad.jpg" }
   ],
   "dinner": [
     {
       "name": "Chicken Chargha",
       "image": "../data/images/dinner-easy.jpg"
-    },    { "name": "Break Tikka","image": "../data/images/dinner-anh.jpg"}, {
-      "name": "Bread Tikka","image": "../data/images/breakfast-bread.jpg"}, {
-      "name": "Chicken Toffu","image": "../data/images/dinner-chau.jpg"}
+    },
+    { "name": "Break Tikka", "image": "../data/images/breakfast-simple.jpg" },
+    {
+      "name": "Bread Tikka",
+      "image": "../data/images/dinner-easy.jpg"
+    },
+    {
+      "name": "Chicken Toffu",
+      "image": "../data/images/breakfast-simple.jpg"
+    }
+  ],
+  "mexican": [
+    {
+      "name": "Chicken Chargha",
+      "image": "../data/images/dinner-easy.jpg"
+    },
+    { "name": "Break Tikka", "image": "../data/images/mexican-food.png" },
+    {
+      "name": "Hakata Ramen",
+      "image": "../data/images/mexican-burguer.png"
+    },
+    {
+      "name": "kebab",
+      "image": "../data/images/dinner-chau.jpg"
+    }
+  ],
+  "italian": [
+    {
+      "name": "Desi Chowmein",
+      "image": "../data/images/lunch-fast.jpg"
+    },
+    {
+      "name": "Bread Tikka",
+      "image": "../data/images/ramen-mae.jpg"
+    },
+    { "name": "Chicken Toffu", "image": "../data/images/lunch-izi.jpg" },
+    { "name": "Eggs Tikka", "image": "../data/images/lunch-cervera.jpg" },
+    { "name": "Desi Chowmein", "image": "../data/images/lunch-salad.jpg" }
+  ],
+  "desserts": [
+    { "name": "kebab", "image": "../data/images/ramen-cody.jpg" },
+    { "name": "Desi Chowmein", "image": "../data/images/ramen-mae.jpg" },
+    { "name": "Chicken Chargha", "image": "../data/images/ramen-grow.png" },
+    { "name": "Chicken Tikka", "image": "../data/images/ramen-black.jpg" },
+    { "name": "Hakata Ramen", "image": "../data/images/ramen-kebab.png" }
+  ],
+  "drinks": [
+    {
+      "name": "Old Fashioned",
+      "image": "../data/images/drink-whitney.jpg"
+    },
+    {
+      "name": "Margarita",
+      "image": "../data/images/drink-great.jpg"
+    },
+    { "name": "Cosmopolitan", "image": "../data/images/drink-hojati.jpg" },
+    { "name": "Negroni", "image": "../data/images/drink-walker.jpg" }
   ]
 }

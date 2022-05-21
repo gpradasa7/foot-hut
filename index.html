@@ -9,6 +9,9 @@
   <title>Reto 2 | Food Hut</title>
   <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+  <link rel="stylesheet" href="light.css" media="(prefers-color-scheme: light)">
+  <link rel="stylesheet" href="dark.css" media="(prefers-color-scheme: dark)">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -125,24 +128,13 @@
     <button class="buttoms" id="mexican">Mexican</button>
     <button class="buttoms" id="italian">Italian</button>
     <button class="buttoms" id="desserts">Desserts</button>
-    <button class="buttoms" drinks>Drinks</button>
+    <button class="buttoms" id="drinks">Drinks</button>
   </section>
 
 
   <section class="secundary">
     <div id="containerCards"></div>
-    <template id="template">
-      <div class="contener">
-        <img src="./images/Kebab.png" alt="Kebab" class="image-secundary">
-        <div class="image--contener-clients"><img class="img1" src="./images/users.png" alt="client">
-          <div><img class="img2" src="./images/star.png" alt="star"></div>
-          <div><span>(4.5)</span></div>
-        </div>
-        <h4 class="title-main">Kebab</h4>
-        <p class="p-secundary">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-        <button class="buttom">Order Now</button>
-      </div>
-    </template>
+
   </section>
 
 
@@ -218,6 +210,7 @@
 
   <script src="./scripts/script.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </body>
 
 </html>
