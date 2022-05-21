@@ -1,14 +1,66 @@
-.btnform {
-  background-color: #f54748;
-  border-radius: 100px;
-  border: none;
-  cursor: pointer;
+:root {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  --light-grey: #e6e6e6;
+  --dark-grey: #1e1e1e;
+  --orange: #f54748;
+  --white: #ffffff;
+  --gradientblack: linear-gradient(180deg, rgba(245, 71, 72, 0.06) 0%, rgba(245, 71, 72, 0) 100%);
+  --gradientwhite: linear-gradient(180deg, rgba(245, 71, 72, 0.06) 0%, rgba(245, 71, 72, 0) 100%);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: var(--light-grey);
+    --accent-color: var(--orange);
+    --page-background-color: var(--dark-grey);
+    --card-background-color: var(--dark-grey);
+    --gradient: var(--gradientblack);
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: var(--dark-grey);
+    --accent-color: var(--orange);
+    --page-background-color: var(--dark-grey);
+    --card-background-color: var(--white);
+    --gradient: var(--gradientwhite);
+  }
+}
+body[data-theme="dark"] {
+  --text-color: var(--light-grey);
+  --accent-color: var(--orange);
+  --page-background-color: var(--dark-grey);
+  --card-background-color: var(--dark-grey);
+  --gradient: var(--gradientblack);
+}
+body[data-theme="light"] {
+  --text-color: var(--dark-grey);
+  --accent-color: var(--orange);
+  --page-background-color: var(--accent);
+  --card-background-color: var(--white);
+  --gradient: var(--gradientwhite);
 }
 body {
+  min-height: 100vh;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  background-color: var(--page-background-color);
+  transition: all 250ms linear;
   margin: 0;
   font-family: "Sofia Pro", sans-serif;
   box-sizing: border-box;
-  overflow-x: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.btnform {
+  background-color: var(--accent-color);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
 }
 .first {
   color: #f54748;
@@ -22,11 +74,7 @@ body {
   height: 788px;
   left: -170px;
   top: 10px;
-  background: linear-gradient(
-    180deg,
-    rgba(245, 71, 72, 0.06) 0%,
-    rgba(245, 71, 72, 0) 100%
-  );
+  background: var(--gradient);
 }
 .logo {
   position: absolute;
@@ -56,7 +104,7 @@ body {
   padding: 0 15px;
 }
 .navbar ul li a {
-  color: black;
+  color: var(--text-color);
   text-decoration: none;
 }
 .navbar button {
@@ -64,8 +112,8 @@ body {
   top: 5px;
   right: 190px;
   padding: 10px;
-  color: #ffffff;
-  background-color: #f54748;
+  color: var(--text-color);
+  background-color: var(--accent-color);
   border-radius: 100px;
   border: none;
   cursor: pointer;
@@ -117,14 +165,14 @@ body {
   position: absolute;
   width: 517px;
   height: 96px;
-  left: 0px;
+  left: 20px;
   top: 205px;
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 32px;
   letter-spacing: -0.01em;
+  color: var(--text-color);
 }
 .search {
   position: relative;
@@ -137,6 +185,7 @@ body {
   border: 0.5px solid;
   border-radius: 100px;
   padding-left: 30px;
+  color: var(--text-color);
 }
 .search form .lupa .lupa1 {
   position: relative;
@@ -166,11 +215,11 @@ body {
   width: 132px;
   height: 35px;
   top: 50px;
-  background-color: #f54748;
+  background-color: var(--accent-color);
   border-radius: 100px;
   border: none;
   cursor: pointer;
-  color: #ffffff;
+  color: var(--text-color);
 }
 .search .btnplay img {
   width: 52px;
@@ -183,7 +232,7 @@ body {
   position: relative;
   width: 508px;
   height: 440px;
-  left: 697px;
+  left: 260px;
   top: 169px;
 }
 .aside3 img {
@@ -195,14 +244,14 @@ body {
 }
 .main h3 {
   position: relative;
-  color: #191919;
+  color: var(--text-color);
   font-size: 48px;
   font-weight: 900, Black;
   font-family: "Sofia Pro", sans-serif;
   line-height: 67px;
   width: 471px;
   height: 67px;
-  left: 460px;
+  left: 140px;
   top: 344px;
 }
 .main h3 .first {
@@ -213,19 +262,24 @@ body {
   position: relative;
   width: 856px;
   height: 48px;
-  left: 254px;
   top: 323px;
   line-height: 24px;
   font-weight: 400, Regular;
   font-size: 20px;
   text-align: center;
+  color: var(--text-color);
 }
 .main2 {
   position: relative;
-  width: 1104px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+  left: 10px;
+  top: 480px;
+  width: 100%;
   height: 516px;
-  left: 70px;
-  top: 470px;
 }
 .main2 .container {
   background-image: url(../images/background-product.png);
@@ -264,6 +318,7 @@ body {
   font-size: 12px;
   font-weight: 400;
   max-width: fit-content;
+  color: var(--text-color);
 }
 .main2 .container .title-main {
   position: relative;
@@ -276,6 +331,7 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 33px;
+  color: var(--text-color);
 }
 .main2 .container .p-main {
   opacity: 0.8;
@@ -287,15 +343,16 @@ body {
   font-family: "Sofia Pro", sans-serif;
   bottom: 160px;
   margin: 0 auto;
+  color: var(--text-color);
 }
 .main2 .container .buttom {
   position: relative;
   margin: 0 auto;
-  background-color: #f54748;
+  background-color: var(--accent-color);
   border-radius: 100px;
   border: none;
   cursor: pointer;
-  color: #ffffff;
+  color: var(--text-color);
   padding: 10px 20px;
   font-weight: 400;
   font-size: 18px;
@@ -322,36 +379,47 @@ body {
   left: 30px;
   top: -120px;
 }
+.aside-2 .asidetitle2 h2 {
+  width: min-content;
+  margin: 0;
+  font-family: "Sofia Pro", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 58px;
+  line-height: 78px;
+}
 .aside-2 .p-main2 {
   display: inline-block;
 }
 .aside-2 .p-main2 h2 {
   position: absolute;
   width: 452px;
-  height: 124px;
+  height: 134px;
   top: 50px;
-  left: 509px;
+  left: 409px;
   margin: 0;
   font-weight: 700;
   font-size: 48px;
+  color: var(--text-color);
 }
 .aside-2 .p-main2 p {
   position: absolute;
   opacity: 0.8;
   width: 690px;
   height: 72px;
-  left: 509px;
-  top: 170px;
+  left: 409px;
+  top: 190px;
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  color: var(--text-color);
 }
 .aside-2 .p-main2 .image-collection-main2 {
   position: relative;
-  left: 509px;
-  width: 500px;
+  left: 409px;
+  width: 100%;
   height: 150px;
 }
 .aside-2 .p-main2 .image-collection-main2 div {
@@ -370,9 +438,10 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  color: var(--text-color);
 }
 .aside-2 .p-main2 .image-collection-main2 button {
-  background-color: #f54748;
+  background-color: var(--accent-color);
   border-radius: 100px;
   border: none;
   cursor: pointer;
@@ -399,6 +468,7 @@ body {
   font-size: 48px;
   line-height: 67px;
   text-align: center;
+  color: var(--text-color);
 }
 .menu-1 {
   position: relative;
@@ -407,7 +477,7 @@ body {
   align-items: flex-start;
   padding: 0px;
   gap: 30px;
-  left: 200px;
+  left: 10px;
   top: 780px;
 }
 .menu-1 .buttoms {
@@ -471,6 +541,7 @@ body {
   font-size: 12px;
   font-weight: 400;
   max-width: fit-content;
+  color: var(--text-color);
 }
 .secundary .contener .title-main {
   position: relative;
@@ -482,6 +553,7 @@ body {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
+  color: var(--text-color);
 }
 .secundary .contener .p-secundary {
   opacity: 0.8;
@@ -493,15 +565,16 @@ body {
   font-family: "Sofia Pro", sans-serif;
   bottom: 160px;
   margin: 0 auto;
+  color: var(--text-color);
 }
 .secundary .contener .buttom {
   position: relative;
   margin: 0 auto;
-  background-color: #f54748;
+  background-color: var(--accent-color);
   border-radius: 100px;
   border: none;
   cursor: pointer;
-  color: #ffffff;
+  color: var(--text-color);
   padding: 10px 20px;
   font-weight: 400;
   font-size: 18px;
@@ -511,10 +584,11 @@ body {
 }
 .aside-final {
   position: relative;
-  width: 643px;
-  height: 134px;
-  left: 70px;
+  width: 550px;
+  max-width: fit-content;
+  right: 340px;
   top: 950px;
+  margin: 0;
 }
 .aside-final h2 {
   font-family: "Sofia Pro", sans-serif;
@@ -522,13 +596,15 @@ body {
   font-weight: 700;
   font-size: 48px;
   line-height: 67px;
+  color: var(--text-color);
 }
 .aside-final p {
   width: 550px;
   height: 72px;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 14px;
+  color: var(--text-color);
 }
 .aside-final .aside-final-buttons img {
   width: 135px;
@@ -569,6 +645,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  color: var(--text-color);
 }
 .footer-final .first-foot-item img {
   margin: 5px;
@@ -591,6 +668,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  color: var(--text-color);
 }
 .footer-final .second-foot-item ul {
   list-style: none;
@@ -598,6 +676,7 @@ body {
 }
 .footer-final .second-foot-item ul li {
   margin: 10px;
+  color: var(--text-color);
 }
 .footer-final .third-foot-item {
   width: 136px;
@@ -616,12 +695,14 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  color: var(--text-color);
 }
 .footer-final .third-foot-item ul {
   list-style: none;
   padding: 0;
 }
 .footer-final .third-foot-item ul li {
+  color: var(--text-color);
   margin: 10px;
 }
 .footer-final .four-foot-item {
@@ -641,33 +722,69 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  color: var(--text-color);
 }
 .footer-final .four-foot-item input {
   background: #19191925;
   border-radius: 38px;
   width: 150px;
   height: 40px;
-  color: #191919;
+  color: var(--text-color);
   border: none;
   padding-left: 15px;
 }
 .footer-final .four-foot-item button {
   height: 40px;
-  background-color: #f54748;
+  background-color: var(--accent-color);
   border-radius: 100px;
   border: none;
   cursor: pointer;
   padding: 10px 20px;
-  color: #ffffff;
+  color: var(--text-color);
 }
 .footer-main2 {
   position: absolute;
   right: 45.88%;
-  bottom: -10%;
+  color: var(--text-color);
+  bottom: -50%;
 }
 #containerCards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+}
+.modal {
+  z-index: 1003;
+  top: 40%;
+  display: block;
+  opacity: 1;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #fafafa;
+  padding: 24px;
+  height: 20%;
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 30px;
+  will-change: top, opacity;
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+.modal-overlay {
+  position: fixed;
+  z-index: 999;
+  opacity: 0.6;
+  top: -25%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 125%;
+  width: 100%;
+  background: #000;
+}
+#theme-toggler {
+  position: relative;
+  left: 25%;
+  inline-size: 50%;
 }

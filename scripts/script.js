@@ -1,5 +1,8 @@
 import { showData } from "../modules/showData.js";
 import GetData from "../helpers/getData.js";
+const body = document.body;
+const modal = document.getElementById("modal");
+const overlay = document.querySelector(".modal-overlay");
 
 const ramenButton = document.getElementById("ramen");
 const breakfastButton = document.getElementById("breakfast");
@@ -19,7 +22,6 @@ const datadesserts = "http://localhost:3000/desserts";
 const datadrinks = "http://localhost:3000/drinks";
 
 const container = document.getElementById("containerCards");
-const main2 = document.querySelector(".main2");
 document.addEventListener("DOMContentLoaded", async () => {
   let ramen = await GetData(dataRamen);
   let breakfast = await GetData(databreakfast);
@@ -54,4 +56,36 @@ document.addEventListener("DOMContentLoaded", async () => {
   drinksButton.addEventListener("click", async () => {
     showData(drinks, container);
   });
+
+  //CAMBIAR TEMA
 });
+//CAMBIAR TEMA
+
+const themeSettings = evt => {
+  const body = document.body;
+
+  const theme = evt.currentTarget.selectedOptions[0].value;
+
+  switch (theme) {
+    case "light":
+      body.setAttribute("data-theme", "light");
+      modal.classList.remove("modal");
+      overlay.classList.remove("modal-overlay");
+      console.log("light mode active");
+      break;
+    case "dark":
+      body.setAttribute("data-theme", "dark");
+      modal.classList.remove("modal");
+      overlay.classList.remove("modal-overlay");
+      break;
+    case "auto":
+    default:
+      body.setAttribute("data-theme", "auto");
+      modal.classList.remove("modal");
+      break;
+  }
+};
+
+const themeToggler = document.getElementById("theme-toggler");
+
+themeToggler.addEventListener("change", themeSettings);

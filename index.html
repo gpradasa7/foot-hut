@@ -9,9 +9,6 @@
   <title>Reto 2 | Food Hut</title>
   <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
-  <link rel="stylesheet" href="light.css" media="(prefers-color-scheme: light)">
-  <link rel="stylesheet" href="dark.css" media="(prefers-color-scheme: dark)">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -20,9 +17,9 @@
   <img src="./images/logo.png" alt="logo" class="logo">
   <header class="navbar">
     <ul>
-      <li><a href="#">Today Special Offers</a></li>
+      <li><a href="#special">Today Special Offers</a></li>
       <li><a href="#">Why FoodHut</a></li>
-      <li><a href="#">Our Menu</a></li>
+      <li><a href="#menu">Our Menu</a></li>
       <li><a href="#">Our Popular Food</a></li>
     </ul>
     <button>Download App</button>
@@ -58,7 +55,7 @@
 
 
   <section class="main">
-    <h3>Today <span class="first">Special
+    <h3 id="special">Today <span class="first">Special
       </span>Offers</h3>
     <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The
       Industry's Standard Dummy Text Ever Since The 1500s</p>
@@ -74,11 +71,41 @@
       <p class="p-main">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
       <button class="buttom">Order Now</button>
     </div>
+    <div class="container">
+      <img src="./images/Kebab.png" alt="Kebab" class="image-main">
+      <div class="image-clients"><img class="img1" src="./images/users.png" alt="client">
+        <div><img class="img2" src="./images/star.png" alt="star"></div>
+        <div><span>(4.5)</span></div>
+      </div>
+      <h4 class="title-main">Kebab</h4>
+      <p class="p-main">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+      <button class="buttom">Order Now</button>
+    </div>
+    <div class="container">
+      <img src="./images/Kebab.png" alt="Kebab" class="image-main">
+      <div class="image-clients"><img class="img1" src="./images/users.png" alt="client">
+        <div><img class="img2" src="./images/star.png" alt="star"></div>
+        <div><span>(4.5)</span></div>
+      </div>
+      <h4 class="title-main">Kebab</h4>
+      <p class="p-main">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+      <button class="buttom">Order Now</button>
+    </div>
+    <div class="container">
+      <img src="./images/Kebab.png" alt="Kebab" class="image-main">
+      <div class="image-clients"><img class="img1" src="./images/users.png" alt="client">
+        <div><img class="img2" src="./images/star.png" alt="star"></div>
+        <div><span>(4.5)</span></div>
+      </div>
+      <h4 class="title-main">Kebab</h4>
+      <p class="p-main">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+      <button class="buttom">Order Now</button>
+    </div>
   </section>
 
   <div class="aside-2">
     <div class="p-main2">
-      <div class="aside2">
+      <div class="asidetitle2">
         <div class="image-main2"><img src="./images/chef.png" alt="image-main2"></div>
         <h2>We are <span class="first">more</span> than <span class="second">multiple</span> service</h2>
         <p>This is a type of resturent which typically serves food and drink, in addition to light refreshments such as
@@ -121,7 +148,7 @@
         class="first">Love</span></h2>
   </div>
 
-  <section class="menu-1">
+  <section class="menu-1" id="menu">
     <button class="buttoms" id="ramen">Ramen
     </button><button class="buttoms" id="breakfast">Breakfast</button><button class="buttoms"
       id="lunch">Lunch</button><button class="buttoms" id="dinner">Dinner</button>
@@ -140,7 +167,7 @@
 
 
   <div class="aside-final">
-    <div class="rectangle"></div>
+
     <h2>It’s Now <span class="first">More Easy</span> to <span class="second">Order </span>by Our Mobile
       <span class="first">App</span>
     </h2>
@@ -197,6 +224,19 @@
         <button type="submit">Suscribe</button>
       </fom>
     </div>
+
+    <div id="modal" class="modal">
+      <p>SELECCIONA TU TEMA PREFERIDO:</p>
+      <div class="toggle-wrapper">
+        <select id="theme-toggler" class="toggler-select">
+          <option value="auto">Auto</option>
+          <option value="dark">Dark</option>
+          <option value="light">Light</option>
+        </select>
+      </div>
+
+    </div>
+    <div class=" modal-overlay"></div>
 
 
     <footer class="footer-main2">
