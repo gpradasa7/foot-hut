@@ -1,102 +1,162 @@
 {
   "ramen": [
-    { "name": "kebab", "image": "../data/images/ramen-cody.jpg" },
-    { "name": "Desi Chowmein", "image": "../data/images/ramen-mae.jpg" },
-    { "name": "Chicken Chargha", "image": "../data/images/ramen-grow.png" },
-    { "name": "Chicken Tikka", "image": "../data/images/ramen-black.jpg" },
-    { "name": "Hakata Ramen", "image": "../data/images/ramen-kebab.png" }
+    {
+      "name": "kebab",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153553/ramen-cody_ggy479.jpg"
+    },
+    {
+      "name": "Desi Chowmein",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153553/ramen-mae_tfdzcw.jpg"
+    },
+    {
+      "name": "Chicken Chargha",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153550/ramen-grow_cquj4s.png"
+    },
+    {
+      "name": "Chicken Tikka",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153553/ramen-black_kxwl7x.jpg"
+    },
+    {
+      "name": "Hakata Ramen",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153551/ramen-kebab_gax9y1.png"
+    }
   ],
   "breakfast": [
     {
       "name": "Eggs Tikka",
-      "image": "../data/images/breakfast-eggs.jpg"
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153544/breakfast-eggs_rryfc4.jpg"
     },
     {
       "name": "Break Tikka",
-      "image": "../data/images/breakfast-hotcake.jpg"
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153544/breakfast-hotcake_sox6hw.jpg"
     },
     {
       "name": "Bread Tikka",
-      "image": "../data/images/breakfast-bread.jpg"
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153540/breakfast-bread_lccuur.jpg"
     },
     {
       "name": "Chicken Toffu",
-      "image": "../data/images/breakfast-simple.jpg"
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153543/breakfast-simple_owqryt.jpg"
     }
   ],
   "lunch": [
     {
       "name": "Desi Chowmein",
-      "image": "../data/images/lunch-fast.jpg"
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153550/lunch-fast_uispy6.jpg"
     },
     {
       "name": "Bread Tikka",
-      "image": "../data/images/breakfast-bread.jpg"
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153540/breakfast-bread_lccuur.jpg"
     },
-    { "name": "Chicken Toffu", "image": "../data/images/lunch-izi.jpg" },
-    { "name": "Eggs Tikka", "image": "../data/images/lunch-cervera.jpg" },
-    { "name": "Desi Chowmein", "image": "../data/images/lunch-salad.jpg" }
+    {
+      "name": "Chicken Toffu",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153550/lunch-izi_y4tojv.jpg"
+    },
+    {
+      "name": "Eggs Tikka",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153549/lunch-cervera_we5dth.jpg"
+    },
+    {
+      "name": "Desi Chowmein",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153549/lunch-salad_apwjvz.jpg"
+    }
   ],
   "dinner": [
     {
       "name": "Chicken Chargha",
-      "image": "../data/images/dinner-easy.jpg"
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153546/dinner-easy_ngvbsx.jpg"
     },
-    { "name": "Break Tikka", "image": "../data/images/breakfast-simple.jpg" },
+    {
+      "name": "Break Tikka",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153543/breakfast-simple_owqryt.jpg"
+    },
     {
       "name": "Bread Tikka",
-      "image": "../data/images/dinner-easy.jpg"
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153546/dinner-easy_ngvbsx.jpg"
     },
     {
       "name": "Chicken Toffu",
-      "image": "../data/images/breakfast-simple.jpg"
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153543/dinner-anh_ozs0wi.jpg"
     }
   ],
   "mexican": [
     {
       "name": "Chicken Chargha",
-      "image": "../data/images/dinner-easy.jpg"
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153546/dinner-easy_ngvbsx.jpg"
     },
-    { "name": "Break Tikka", "image": "../data/images/mexican-food.png" },
+    {
+      "name": "Break Tikka",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153549/mexican-food_zryhzq.png"
+    },
     {
       "name": "Hakata Ramen",
-      "image": "../data/images/mexican-burguer.png"
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153548/mexican-burguer_jzlzm4.png"
     },
     {
       "name": "kebab",
-      "image": "../data/images/dinner-chau.jpg"
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153545/dinner-chau_qfdldn.jpg"
     }
   ],
   "italian": [
     {
       "name": "Desi Chowmein",
-      "image": "../data/images/lunch-fast.jpg"
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153550/lunch-fast_uispy6.jpg"
     },
     {
       "name": "Bread Tikka",
-      "image": "../data/images/ramen-mae.jpg"
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153553/ramen-mae_tfdzcw.jpg"
     },
-    { "name": "Chicken Toffu", "image": "../data/images/lunch-izi.jpg" },
-    { "name": "Eggs Tikka", "image": "../data/images/lunch-cervera.jpg" },
-    { "name": "Desi Chowmein", "image": "../data/images/lunch-salad.jpg" }
+    {
+      "name": "Chicken Toffu",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153550/lunch-izi_y4tojv.jpg"
+    },
+    {
+      "name": "Eggs Tikka",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153549/lunch-cervera_we5dth.jpg"
+    },
+    {
+      "name": "Desi Chowmein",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153549/lunch-salad_apwjvz.jpg"
+    }
   ],
   "desserts": [
-    { "name": "kebab", "image": "../data/images/ramen-cody.jpg" },
-    { "name": "Desi Chowmein", "image": "../data/images/ramen-mae.jpg" },
-    { "name": "Chicken Chargha", "image": "../data/images/ramen-grow.png" },
-    { "name": "Chicken Tikka", "image": "../data/images/ramen-black.jpg" },
-    { "name": "Hakata Ramen", "image": "../data/images/ramen-kebab.png" }
+    {
+      "name": "kebab",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153553/ramen-cody_ggy479.jpg"
+    },
+    {
+      "name": "Desi Chowmein",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153553/ramen-mae_tfdzcw.jpg"
+    },
+    {
+      "name": "Chicken Chargha",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153550/ramen-grow_cquj4s.png"
+    },
+    {
+      "name": "Chicken Tikka",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153553/ramen-black_kxwl7x.jpg"
+    },
+    {
+      "name": "Hakata Ramen",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153551/ramen-kebab_gax9y1.png"
+    }
   ],
   "drinks": [
     {
       "name": "Old Fashioned",
-      "image": "../data/images/drink-whitney.jpg"
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153547/drink-whitney_afzfxq.jpg"
     },
     {
       "name": "Margarita",
-      "image": "../data/images/drink-great.jpg"
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153546/drink-great_kjb4rr.jpg"
     },
-    { "name": "Cosmopolitan", "image": "../data/images/drink-hojati.jpg" },
-    { "name": "Negroni", "image": "../data/images/drink-walker.jpg" }
+    {
+      "name": "Cosmopolitan",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153548/drink-hojati_agidph.jpg"
+    },
+    {
+      "name": "Negroni",
+      "image": "https://res.cloudinary.com/gpradasa7/image/upload/v1653153548/drink-walker_pmsjeu.jpg"
+    }
   ]
 }

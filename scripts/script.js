@@ -1,6 +1,6 @@
 import { showData } from "../modules/showData.js";
 import GetData from "../helpers/getData.js";
-const body = document.body;
+
 const modal = document.getElementById("modal");
 const overlay = document.querySelector(".modal-overlay");
 
@@ -12,14 +12,14 @@ const mexicanButton = document.getElementById("mexican");
 const italianButton = document.getElementById("italian");
 const dessertsButton = document.getElementById("desserts");
 const drinksButton = document.getElementById("drinks");
-const dataRamen = "http://localhost:3000/ramen";
-const databreakfast = "http://localhost:3000/breakfast";
-const datalunch = "http://localhost:3000/lunch";
-const datadinner = "http://localhost:3000/dinner";
-const datamexican = "http://localhost:3000/mexican";
-const dataitalian = "http://localhost:3000/italian";
-const datadesserts = "http://localhost:3000/desserts";
-const datadrinks = "http://localhost:3000/drinks";
+const dataRamen = "https://hut-food.herokuapp.com/ramen";
+const databreakfast = "https://hut-food.herokuapp.com/breakfast";
+const datalunch = "https://hut-food.herokuapp.com/lunch";
+const datadinner = "https://hut-food.herokuapp.com/dinner";
+const datamexican = "https://hut-food.herokuapp.com/mexican";
+const dataitalian = "https://hut-food.herokuapp.com/italian";
+const datadesserts = "https://hut-food.herokuapp.com/desserts";
+const datadrinks = "https://hut-food.herokuapp.com/drinks";
 
 const container = document.getElementById("containerCards");
 document.addEventListener("DOMContentLoaded", async () => {
