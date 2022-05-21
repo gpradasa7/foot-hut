@@ -166,7 +166,7 @@ body {
   width: 517px;
   height: 96px;
   left: 20px;
-  top: 205px;
+  top: 225px;
   font-family: "Sofia Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -249,7 +249,7 @@ body {
   font-weight: 900, Black;
   font-family: "Sofia Pro", sans-serif;
   line-height: 67px;
-  width: 471px;
+  width: 571px;
   height: 67px;
   left: 140px;
   top: 344px;
@@ -706,7 +706,7 @@ body {
   margin: 10px;
 }
 .footer-final .four-foot-item {
-  width: 379px;
+  width: 489px;
   height: 195px;
   margin: 5%;
 }
@@ -734,6 +734,8 @@ body {
   padding-left: 15px;
 }
 .footer-final .four-foot-item button {
+  display: inline;
+  width: 90px;
   height: 40px;
   background-color: var(--accent-color);
   border-radius: 100px;
